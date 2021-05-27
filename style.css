@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 800px;
+  width: 100%;
+  max-width: 60%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 50px 0 50px;
+  padding: 0 0 0 30px;
+}
+p {
+  line-height: 2em;
+  font-size: 15px;
+  padding: 10px 60px 30px 30px;
+}
+.card a {
+  display: inline-block;
+  margin: 30px;
+  padding: 10px;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.card--orange {
+  background-color: hsl(31, 77%, 52%);
+}
+.card--orange a {
+  color: hsl(31, 77%, 52%);
+}
+.card--blue {
+  background-color: hsl(184, 100%, 22%);
+}
+.card--blue a {
+  color: hsl(184, 100%, 22%);
+}
+.card--green {
+  background-color: hsl(179, 100%, 13%);
+}
+.card--green a {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 328px) {
+  .container {
+    flex-direction: column;
+  }
+}
